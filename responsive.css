@@ -1,0 +1,90 @@
+@media (max-width: 1125px) {
+    header {
+        height: 100%;
+        width: 140px;
+        background-color: rgba(255, 182, 73, 0.9);
+    }
+
+    .flex-list {
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    .flex-list li {
+        margin: 0 auto;
+    }
+
+    ul {
+	    z-index: 10;
+	    float: left;
+	    margin-top: 100px;
+        margin-left: -120px;
+        line-height: 30px;
+    
+    }   
+
+    .header-right {
+        position: relative;
+        animation-name: example1;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes example1 {
+        from{left: -140px;}
+        to{left: 0;  }
+    }
+    
+    .logo {
+        position: relative;
+        animation-name: example2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes example2 {
+        from{left: -140px;}
+        to{left: 0; }
+    }
+
+    .logo-img{
+        float: left;
+        position: fixed;
+    }
+    
+
+    .top-wrapper, .lesson-wrapper, .message-wrapper, .footer {
+        padding-left: 140px;
+    }
+
+
+    .lesson {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    
+    .top-wrapper h3 {
+        font-size: 30px;
+    }
+    .lesson {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 670px) {
+   
+    .top-wrapper h3 {
+        font-size: 23px;
+    }
+
+    .lesson {
+        width: 100%;
+    }
+
+
+}
