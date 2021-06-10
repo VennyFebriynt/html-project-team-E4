@@ -1,0 +1,315 @@
+* {
+	box-sizing: border-box;
+  }
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lucida Grande";
+	min-width: 670px;
+}
+
+
+
+header {
+	height: 65px;
+	width: 100%;
+	background-color: rgba(255, 182, 73, 0.9);
+	
+	/* Ubah position ke fixed, dan top ke 0 */
+	position: fixed;
+	top: 0;
+	/* Ubah z-index ke 10 */
+	z-index: 10;
+}
+
+
+ul {
+	z-index: 10;
+	float: right;
+	margin-top: 35px;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	
+	text-decoration: none;
+	color: #000;
+	padding: 5px 20px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	transition: 0.6s;
+	margin: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+ul li a:hover {
+	background-color: #8FBC8F;
+	color: #000;
+}
+
+.flex-list {
+	display: flex;
+}
+
+.flex-list li {
+	flex: auto;
+}
+
+.clear {
+	clear: left;
+}
+
+.logo img {
+	float: left;
+	width: 180px;
+	height: auto;
+	margin-top: 20px;
+	position: fixed;
+	z-index: 10;
+	cursor: pointer;
+	
+}
+
+.header-right {
+	
+	position: relative;
+	animation-name: example1;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes example1 {
+	from{top: -65px;}
+	to{top: 0; }
+}
+
+.logo {
+	position: relative;
+	animation-name: example2;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes example2 {
+	from{top: -65px;}
+	to{top: 0; }
+}
+
+.container {
+	/*margin: 5px;*/
+	
+	width: 100%;
+	padding: 0 75px;
+  margin: 0 auto;
+}
+
+.container a {
+	color: rgb(134, 134, 158);
+	
+}
+
+.container a:hover {
+	color: rgb(255, 255, 255);
+	transition: 0.6s;
+}
+
+
+
+.top-wrapper {
+	background-image: url(new2.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	opacity: 86%;
+	/*position: absolute;*/
+	margin-top: 0 auto;
+	padding-top: 90px;
+	padding-left: 70px;
+	/*margin-top:20px;*/
+	/*display:inline-block;*/
+	
+	/*float: left;*/
+}
+
+.top-wrapper h1 {
+	font-size: 25px;
+	text-align: left;
+	font-family:"Book Antiqua";
+	opacity:2;
+	color: #000;
+	margin: 5px;
+	letter-spacing: 1px;
+	padding-top: 25px;
+}
+
+.top-wrapper h2 {	
+	font-size:25px;
+	color:#000;
+	font-family:"Kaufmann BT";
+	margin-top:5px;
+	padding-bottom:3px;
+	letter-spacing:2px;
+	
+}
+
+.top-wrapper h3 {
+	color: #fff;
+	opacity: 1;
+	font-size: 38px;
+	text-align: center;
+	
+}
+
+.section-title{
+	border-top: 3px solid #B22222;
+	padding: 5px;
+	width: 100%;  
+
+}
+.top-wrapper p{
+	width:400px;
+	font-size:15px;
+	color:#000;
+	font-family:"Serif Font";
+	padding: 1px;
+	margin-top: 5px;
+}
+
+.lesson-wrapper {
+    
+    padding-bottom: 50px;
+    background-color: burlywood;
+	margin: 0 auto;
+    
+}
+
+.heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+.heading h4 {
+    font-weight: normal;
+	font-size: 50px;
+	
+	
+}
+
+.lesson {
+    float: left;
+    width: 24%;
+	background-color: rgb(143, 113, 73);
+	height: 370px;
+	border-radius: 2px;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+
+.lesson:hover {
+	background-color: rgb(209, 161, 98);
+	transition: 0.8s;
+	
+	
+}
+
+.lesson p {
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 10px ;
+}
+
+
+
+.lesson-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.lesson-icon p {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: rgb(255, 197, 131);
+}
+
+.lesson-icon img {
+	
+	width: 267px;
+	padding-left: 15px;
+	display: block;
+	margin: auto;
+
+}
+
+.text-contents {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    
+}
+
+
+.message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 60px;
+    text-align: center;
+	color: black;
+}
+
+.heading h2, p{
+	color: black;
+}
+
+.message {
+    padding: 15px 40px;
+    background-color: #5f5dca;
+    cursor: pointer;
+    box-shadow: 0 7px #343377;
+}
+
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+.inner-footer {
+	margin:  0;
+	padding: 0;
+}
+.outer-footer{
+	background-color: #6cccc6;
+	text-align: center;
+	
+}
+.inner-footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 15	px;
+  margin-top: 10px;
+}
+
+footer{
+  padding-top: 30px;
+  height: 65px;
+  width: 100%;
+
+}
+
+footer h3{
+	font-size: 18px;
+}
